@@ -7,8 +7,10 @@ import { GoVerified } from 'react-icons/goverified'
 import millifty from 'millify'
 
 
-const Property = () => (
+const Property = ({ property: { coverPhoto, price, rentFrequency, rooms, titles, baths, area, agency, isVerified, externelId}}) => (
     <Link href={`/property/$(externalID)`} passHref>
-
+        {title}
     </Link>
 )
+
+export default property
